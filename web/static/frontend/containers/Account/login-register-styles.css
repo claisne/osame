@@ -1,0 +1,153 @@
+
+@import '../../styles/colors.css';
+
+.content {
+  flex: 1 1 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(251, 251, 251);
+}
+
+.login-register {
+  display: flex;
+  flex-direction: column;
+
+  width: 700px;
+  padding: 35px 0;
+
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 2px -2px rgba(200, 200, 200, 0.2);
+}
+
+.login-register-forms {
+  display: flex;
+}
+
+.account-action {
+  flex: 1 1 50%;
+}
+
+.account-action h2 {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.login {
+  composes: account-action;
+}
+
+.register {
+  composes: account-action;
+
+  border-right: 1px solid #ddd;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 40px;
+}
+
+.input {
+  margin-bottom: 15px;
+}
+
+.input:focus {
+  border-color: rgba(82, 168, 236, .8);
+  outline: 0;
+  outline: thin dotted \9;
+  box-shadow: 0 0 8px rgba(82, 168, 236, .6) !important;
+}
+
+.text-input {
+  composes: input;
+
+  display: block;
+
+  height: 34px;
+  padding: 6px 12px;
+
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.text-input-error {
+  composes: text-input;
+
+  border: 1px solid rgb(169, 68, 66);
+}
+
+.text-input-error:focus {
+  border: 1px solid rgb(169, 68, 66);
+  box-shadow: 0 0 8px rgba(169, 68, 66, .6) !important;
+}
+
+.submit-input {
+  display: block;
+
+  padding: 6px 12px;
+  margin: 0;
+  margin-top: 28px;
+
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  background: #fff;
+
+  cursor: pointer;
+}
+
+.information {
+  margin: 0;
+  margin-top: 40px;
+  padding: 0 40px;
+
+  text-align:center;
+  font-size: 12px;
+}
+
+.error-text {
+  margin-top: 0;
+  margin-bottom: -10px;
+
+  text-align: center;
+  font-size: 13px;
+
+  color: rgb(169, 68, 66);
+}
+
+.register-country {
+  text-align: center;
+}
+
+.register-country img {
+  display: inline-block;
+
+  width: 30px;
+
+  margin-bottom: -10px;
+
+  cursor: pointer;
+}

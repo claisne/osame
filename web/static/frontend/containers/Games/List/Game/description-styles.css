@@ -1,0 +1,51 @@
+
+@import "../../../../styles/colors.css";
+
+.description {
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex: 0 0 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-weight: 400;
+}
+
+.header img {
+  height: 26px;
+}
+
+.header-country {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats {
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 0 10px;
+  padding: 5px 0;
+  border-top: 1px solid #ddd;
+}
+
+.stats-item {
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+.stats-item i {
+  margin: 0 25px;
+}

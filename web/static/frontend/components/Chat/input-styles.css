@@ -1,0 +1,23 @@
+
+.content {
+  flex: 0 0 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+
+  border-top: 1px solid #ddd;
+}
+
+.input {
+  flex: 1 1 auto;
+
+  border: none;
+}
+
+.input:focus {
+  outline: 0;
+}
+

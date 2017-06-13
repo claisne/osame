@@ -1,0 +1,172 @@
+
+@import "../../styles/colors.css";
+
+.navbar {
+  flex: 0 0 auto;
+
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 3px 2px -2px rgba(200, 200, 200, 0.2);
+}
+
+.top-colors {
+  height: 3px;
+
+  display: flex;
+}
+
+.top-color {
+  height: 100%;
+  flex: 1 1 auto;
+}
+
+.top-color-red {
+  composes: top-color;
+
+  background-color: $red;
+}
+
+.top-color-blue {
+  composes: top-color;
+
+  background-color: $blue;
+}
+
+.top-color-green {
+  composes: top-color;
+
+  background-color: $green;
+}
+
+.top-color-yellow {
+  composes: top-color;
+
+  background-color: $yellow;
+}
+
+.content {
+  height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-left {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.content-right {
+  flex: 0 0 auto;
+}
+
+.brand,
+.brand:hover,
+.brand:link,
+.brand:visited,
+.brand:active {
+  display: inline-block;
+
+  padding: 0 15px;
+  margin-right: 10px;
+  line-height: 50px;
+
+  color: #444444;
+  background: #F9F9F9;
+
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  text-decoration: none;
+}
+
+.link,
+.link:hover,
+.link:link,
+.link:visited,
+.link:active {
+  display: inline-block;
+
+  padding: 0 15px;
+  line-height: 50px;
+
+  font-weight: 300;
+  text-decoration: none;
+  color: #000;
+
+  cursor: pointer;
+
+  transition: color 0.3s;
+}
+
+.link>i {
+  margin-right: 5px;
+}
+
+.link-red {
+  composes: link;
+}
+
+.link-red:hover {
+  color: $red;
+}
+
+.link-blue {
+  composes: link;
+}
+
+.link-blue:hover {
+  color: $blue;
+}
+
+.link-green {
+  composes: link;
+}
+
+.link-green:hover {
+  color: $green;
+}
+
+.link-yellow {
+  composes: link;
+}
+
+.link-yellow:hover {
+  color: $yellow;
+}
+
+.link-login {
+  composes: link;
+}
+
+.link-login:hover {
+  color: $red;
+}
+
+.link-register {
+  composes: link;
+}
+
+.link-register:hover {
+  color: $blue;
+}
+
+.link-user {
+  display: flex;
+  align-items: center;
+
+  line-height: 50px;
+  padding: 0 20px;
+
+  font-weight: 400;
+}
+
+.link-user img {
+  width: 30px;
+
+  margin-left: 15px;
+}
+

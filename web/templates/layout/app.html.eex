@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Osame</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/chessboard-0.3.0.css") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/normalize.css") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/bundle.css") %>">
+  </head>
+
+  <body>
+    <%= render @view_module, @view_template, assigns %>
+  </body>
+</html>

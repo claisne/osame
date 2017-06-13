@@ -1,0 +1,26 @@
+
+.message {
+  padding: 0 10px;
+  padding-top: 10px;
+
+  font-size: 14px;
+  word-break: break-all;
+}
+
+.flag {
+  width: 15px;
+}
+
+.username {
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+.date {
+  font-weight: 300;
+}
+
+.separator {
+  margin-left: 2px;
+  margin-right: 4px;
+}

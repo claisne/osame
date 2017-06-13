@@ -1,0 +1,19 @@
+
+@import "./border-box";
+
+:global {
+  body {
+    overflow-y: hidden;
+    font-family: "Source Sans Pro";
+    overflow-y: hidden;
+  }
+
+  .loading-container {
+    height: 100vh;
+    flex: 1 1 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

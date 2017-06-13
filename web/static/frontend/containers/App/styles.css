@@ -1,0 +1,13 @@
+
+.app {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+
+  display: flex;
+}

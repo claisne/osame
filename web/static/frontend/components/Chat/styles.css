@@ -1,0 +1,75 @@
+
+@import '../../styles/colors';
+
+.content {
+  flex: 0 0 350px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #fff;
+}
+
+.header {
+  flex: 0 0 53px;
+
+  display: flex;
+
+  font-weight: 300;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 1px -3px rgba(200, 200, 200, 0.2);
+}
+
+.messages {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.header-section {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 25px;
+
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.header-section>i {
+  margin-right: 5px;
+}
+
+.header-section>img {
+  margin-right: 5px;
+
+  width: 30px;
+}
+
+.global-header {
+  composes: header-section;
+
+  border-bottom: 2px solid $red;
+}
+
+.global-header-fade {
+  composes: global-header;
+
+  opacity: 0.5;
+}
+
+.country-header {
+  composes: header-section;
+
+  border-bottom: 2px solid $blue;
+}
+
+.country-header-fade {
+  composes: country-header;
+
+  opacity: 0.5;
+}

@@ -1,0 +1,15 @@
+
+.header {
+  flex: 0 0 53px;
+
+  position: relative;
+
+  display: flex;
+
+  background: white;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 3px 2px -2px rgba(200, 200, 200, 0.2);
+
+  font-weight: 300;
+  font-size: 1.1em;
+}

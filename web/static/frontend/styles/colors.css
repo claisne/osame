@@ -1,0 +1,22 @@
+
+$red: #FC5652;
+$blue: #00ABCD;
+$green: #00B3A0;
+$yellow: #F6C574;
+
+.color-red {
+  color: $red;
+}
+
+.color-blue {
+  color: $blue;
+}
+
+.color-green {
+  color: $green;
+}
+
+.color-yellow {
+  color: $yellow;
+}
+

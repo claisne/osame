@@ -1,0 +1,22 @@
+defmodule Osame.Repo.Migrations.CreateUser do
+  use Ecto.Migration
+
+  def change do
+    create table(:users) do
+      add :name, :string, null: false
+      add :email, :string, null: false
+
+      add :password_hash, :string, null: false
+
+      add :actived, :boolean, default: false, null: false
+      add :activation_token, :string, null: false
+
+      add :country_id, references(:countries), null: false
+
+      timestamps
+    end
+
+    create unique_index :users, [:name]
+    create unique_index :users, [:email]
+  end
+end

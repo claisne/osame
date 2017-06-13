@@ -1,0 +1,15 @@
+
+.board {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chessboardjs {
+  width: 450px;
+}
+
+.chessboardjs :global(.board-b72b1) {
+  border: 1px solid #000;
+}

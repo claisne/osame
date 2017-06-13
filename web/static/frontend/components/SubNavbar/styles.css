@@ -1,0 +1,72 @@
+
+@import "../../styles/colors";
+@import "../../styles/buttons";
+
+.subnavbar {
+  position: relative;
+
+  flex: 0 0 53px;
+
+  display: flex;
+
+  background: white;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 3px 2px -2px rgba(200, 200, 200, 0.2);
+
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  padding: 0 15px;
+  border-right: 1px solid #ddd;
+}
+
+.item-right {
+  composes: item;
+
+  border: none;
+  border-left: 1px solid #ddd;
+}
+
+.item i {
+  margin-right: 10px;
+}
+
+.icon-green {
+  color: $green;
+}
+
+.icon-red {
+  color: $red;
+}
+
+.top-country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.top-country img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.left {
+  flex: 1 1 auto;
+
+  display: flex;
+}
+
+.right {
+  flex: 0 0 auto;
+}
+
+.logout-btn {
+  composes: btn-default;
+}

@@ -1,0 +1,24 @@
+
+.board {
+  position: relative;
+
+  border: 1px solid #908F8F;
+}
+
+.square {
+  display: inline-block;
+}
+
+.square-white {
+  composes: square;
+
+  color: #b58863;
+  background-color: #f0d9b5;
+}
+
+.square-black {
+  composes: square;
+
+  color: #f0d9b5;
+  background-color: #b58863;
+}
